@@ -1,0 +1,82 @@
+.nav-container {
+  display: grid;
+  height: 60px;
+  background: #fff;
+  padding: 15px 20px;
+  grid-template-columns: 2fr 4fr 3fr 2fr;
+  grid-template-areas: 'nav-burger-wrapper nav-search-wrapper . nav-right-buttons';
+}
+
+.nav-icon {
+  color: #a1a1a1;
+}
+
+.nav-burger-wrapper {
+  grid-area: nav-burger-wrapper;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.nav-search-wrapper {
+  grid-area: nav-search-wrapper;
+}
+
+.nav-right-buttons {
+  grid-area: nav-right-buttons;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  justify-self: end;
+  flex: 1;
+  width: 60%;
+}
+
+.nav-search-input {
+  height: 32px;
+  max-width: 650px;
+  display: flex;
+  font-size: 18px;
+  flex: 1;
+  padding: 0 10px;
+}
+
+.nav-btn-search {
+  flex: 0.1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav-search-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-brand-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.nav-brand-text {
+  margin-left: 5px;
+  font-size: 18px;
+  letter-spacing: -0.8px;
+}
+
+.nav-avatar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-avatar-img {
+  height: 35px;
+  padding: 0px;
+  width: 35px;
+  border-radius: 17.5px;
+}
