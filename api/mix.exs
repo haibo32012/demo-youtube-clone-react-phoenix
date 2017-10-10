@@ -20,7 +20,7 @@ defmodule Youtube.Mixfile do
   def application do
     [
       mod: {Youtube.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :ueberauth, :ueberauth_google]
     ]
   end
 
@@ -38,7 +38,9 @@ defmodule Youtube.Mixfile do
       {:phoenix_ecto, "~> 3.2"},
       {:postgrex, ">= 0.0.0"},
       {:gettext, "~> 0.11"},
-      {:cowboy, "~> 1.0"}
+      {:cowboy, "~> 1.0"},
+      {:ueberauth, "~> 0.4"},
+      {:ueberauth_google, "~> 0.5"}
     ]
   end
 
