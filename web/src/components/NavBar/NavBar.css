@@ -3,12 +3,20 @@
   height: 60px;
   background: #fff;
   padding: 15px 20px;
-  grid-template-columns: 2fr 4fr 3fr 2fr;
+  grid-template-columns: 1fr 4fr 3fr 2fr;
   grid-template-areas: 'nav-burger-wrapper nav-search-wrapper . nav-right-buttons';
+  grid-column-gap: 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .nav-icon {
   color: #a1a1a1;
+}
+
+.nav-btn-search > .nav-icon {
+  font-size: 18px;
 }
 
 .nav-burger-wrapper {

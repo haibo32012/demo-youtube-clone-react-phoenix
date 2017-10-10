@@ -3,4 +3,10 @@
   background: #F9F9F9;
   display: grid;
   grid-template-columns: 1fr 7fr;
+  padding-top: 60px;
 }
+
+/* .main-content-wrapper {
+  display: grid;
+  grid-template-rows: 5fr 5fr;
+} */

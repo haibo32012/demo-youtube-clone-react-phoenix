@@ -4,7 +4,7 @@ import { Icon } from 'react-fa';
 import './NavBar.css';
 
 class NavBar extends Component {
-  state = { }
+  state = {};
   render() {
     return (
       <div className="nav-container">
@@ -17,8 +17,14 @@ class NavBar extends Component {
         </div>
         <div className="nav-search-wrapper">
           <form id="nav-search-form">
-            <input className="nav-search-input" type="text" placeholder="Search" />
-            <button className="nav-btn-search"><Icon className="nav-icon" name="search" size="2x" /></button>
+            <input
+              className="nav-search-input"
+              type="text"
+              placeholder="Search"
+            />
+            <button className="nav-btn-search">
+              <Icon className="nav-icon" name="search" />
+            </button>
           </form>
         </div>
         <div className="nav-right-buttons">
@@ -26,7 +32,11 @@ class NavBar extends Component {
           <Icon name="th" className="nav-icon" />
           <Icon name="bell" className="nav-icon" />
           <div className="nav-avatar-wrapper">
-            <img className="nav-avatar-img" src="https://yt3.ggpht.com/-hp_4wt12CCg/AAAAAAAAAAI/AAAAAAAAAAA/5GN7MTdnVlg/s88-c-k-no-mo-rj-c0xffffff/photo.jpg" alt="avatar" />
+            <img
+              className="nav-avatar-img"
+              src="https://yt3.ggpht.com/-hp_4wt12CCg/AAAAAAAAAAI/AAAAAAAAAAA/5GN7MTdnVlg/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+              alt="avatar"
+            />
           </div>
         </div>
       </div>
