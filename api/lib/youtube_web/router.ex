@@ -3,6 +3,8 @@ defmodule YoutubeWeb.Router do
 
   pipeline :api do
     plug :accepts, ["json"]
+    plug Guardian.Plug.VerifyHeader, realm: "Bearer"
+    plug Guardian.Plug.LoadResource
   end
 
   scope "/api", YoutubeWeb do
@@ -12,7 +14,7 @@ defmodule YoutubeWeb.Router do
   end
 
   scope "/auth", YoutubeWeb do
-    get "/:provider", AuthController, :request
-    get "/:provider/callback", AuthController, :callback
+    get "/:provider", AuthController, :index
+    post "/:provider/callback", AuthController, :callback
   end
 end

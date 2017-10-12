@@ -36,6 +36,10 @@ config :logger, :console, format: "[$level] $message\n"
 # in production as building large stacktraces may be expensive.
 config :phoenix, :stacktrace_depth, 20
 
+config :oauth2, Youtube.OAuth.Google,
+  client_id: System.get_env("GOOGLE_CLIENT_ID"),
+  client_secret: System.get_env("GOOGLE_CLIENT_SECRET")
+
 # Configure your database
 config :youtube, Youtube.Repo,
   adapter: Ecto.Adapters.Postgres,
@@ -44,3 +48,6 @@ config :youtube, Youtube.Repo,
   database: "youtube_dev",
   hostname: "localhost",
   pool_size: 10
+
+config :guardian, Youtube.Guardian,
+  secret_key: "s4nz7MqRkSgC0iqOg2R8tshi/w+Tw6Lo1xQIaeHBx006o7xdLYjsMMJSoFwLFxMO"

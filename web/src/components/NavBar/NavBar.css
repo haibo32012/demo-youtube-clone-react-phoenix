@@ -88,3 +88,10 @@
   width: 35px;
   border-radius: 17.5px;
 }
+
+.nav-signin-btn {
+  cursor: pointer;
+  color: red;
+  font-weight: 600;
+  font-size: 18px;
+}

@@ -36,6 +36,8 @@ defmodule YoutubeWeb.Endpoint do
     key: "_youtube_key",
     signing_salt: "msr47upo"
 
+  plug CORSPlug, origin: ["http://localhost:3000"]
+
   plug YoutubeWeb.Router
 
   @doc """

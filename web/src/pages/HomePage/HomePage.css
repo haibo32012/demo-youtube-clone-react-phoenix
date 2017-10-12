@@ -39,7 +39,7 @@
 
 .video-author, .video-meta {
   font-size: 12px;
-  color: #6E6E6E;
+  color: rgba(110, 110, 110, 0.57);
   font-weight: 300;
 }
 
